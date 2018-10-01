@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Duy Pham</title>
+    <link rel="stylesheet" href="./adCSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    <script>
+    $(document).ready(function(){
+        $("#fb").mouseenter(function(){
+            document.getElementById("fbi").setAttribute("class", "fa fa-facebook-square fa-spin");
+        });
+        $("#fb").mouseleave(function(){
+            document.getElementById("fbi").setAttribute("class", "fa fa-facebook-square");
+        });
+
+        $("#in").mouseenter(function(){
+            document.getElementById("ini").setAttribute("class", "fa fa-instagram fa-spin");
+        });
+        $("#in").mouseleave(function(){
+            document.getElementById("ini").setAttribute("class", "fa fa-instagram");
+        });
+
+        $("#gi").mouseenter(function(){
+            document.getElementById("gii").setAttribute("class", "fa fa-git fa-spin");
+        });
+        $("#gi").mouseleave(function(){
+            document.getElementById("gii").setAttribute("class", "fa fa-git");
+        });
+
+        $("#st").mouseenter(function(){
+            document.getElementById("sti").setAttribute("class", "fa fa-steam fa-spin");
+        });
+        $("#st").mouseleave(function(){
+            document.getElementById("sti").setAttribute("class", "fa fa-steam");
+        });
+    });
+    </script>
+
+<style>
+    .size {
+    font-size: .1em;
+    }
+
+    .my {
+        stroke: black;
+        stroke-dasharray: 1% 6%;
+        stroke-width: 4px;
+        -webkit-animation: stroke-offset 8s  linear infinite;
+            animation: stroke-offset 8s linear infinite;
+        stroke-dashoffset: 0%;
+        stroke-linecap:round;
+        fill: none;
+    }
+    .my:nth-child(1) {
+        stroke: black;
+        stroke-dashoffset: 10%;
+        animation-delay: -1;
+    }
+    .my:nth-child(2) {
+        stroke: blue;
+        stroke-dashoffset: 20%;
+        animation-delay: -1;
+    }
+    .my:nth-child(3) {
+        stroke: green;
+        stroke-dashoffset: 30%;
+        animation-delay: -1;
+    }
+    .my:nth-child(4) {
+        stroke: yellow;
+        stroke-dashoffset: 40%;
+        animation-delay: -1;
+    }
+    .my:nth-child(5) {
+        stroke: orange;
+        stroke-dashoffset: 50%;
+        animation-delay: -4;
+    }
+    .my:nth-child(6) {
+        stroke: red;
+        stroke-dashoffset: 60%;
+        animation-delay: -4;
+    }
+
+    svg {
+        position: absolute;
+        width: 100vw;
+        height: 80vh;
+        margin: 0 auto;
+    }
+
+    @-webkit-keyframes stroke-offset {
+        50% {
+        stroke-dasharray: 0 87.5%;
+        stroke-dashoffset: 35%;
+        }
+    }
+
+    @keyframes stroke-offset {
+    50% {
+        stroke-dasharray: 0 77.5%;
+        stroke-dashoffset: 45%;
+        }
+    }
+
+    
+    </style>
+
+
+</head>
+<body style="background-color:rgb(26, 26, 26);" onLoad="myFunction()">
+<nav class="bar">
+    <div class="row" style="height:100vh">
+    <div class="col-sm-4" style="height:100%;text-align:center;">
+        <a href="#" style="text-decoration: none;color:white;"><h1 style="text-align:center;margin:auto;font-family: 'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;color:white;font-size: 6.1vh;">Duy Pham</h1></a>
+    </div>
+    <div class="col-xs-4" style="height:100%;text-align:center">
+        <div class="row" style="height:100%">
+            <div class="col-xs-4 hvr-sink" style="height:100%;"><a id="ab" target="iframe_a" class="top " href="denied.html" style="text-decoration: none;color:white;">About</a></div>
+            <div class="col-xs-4 hvr-sink" style="height:100%"><a id="re" target="iframe_a" class="top " href="./resumeonline.pdf" style="text-decoration: none;color:white">Résumé</a></div>
+            <div class="col-xs-4 hvr-sink" style="height:100%;"><a id="co" target="iframe_a" class="top" href="denied.html" style="text-decoration:none;color:white">Contract</a></div>
+        </div>
+    </div>
+    <div class="col-xs-4" style="height:100%;text-align:center">
+        <div class="col-sm-1" style="height:100%"></div>
+        <div class="col-sm-1" style="height:100%"></div>
+        <div class="col-sm-1" style="height:100%"></div>
+        <div class="col-sm-1" style="height:100%"></div>
+        <div class="col-sm-1" style="height:100%"><a id="fb" class="top" href="https://www.facebook.com/pnad0911" ><i id="fbi" class="fa fa-facebook-square" style="font-size:20px;color: rgb(0, 0, 153);"></i></a></div>
+        <div class="col-sm-1" style="height:100%"><a id="in" class="top" href="https://www.instagram.com/pnaduy/?hl=en"><i id="ini" class="fa fa-instagram" style="font-size:20px;color:rgb(255, 0, 0);"></i></a></div>
+        <div class="col-sm-1" style="height:100%"><a id="gi" class="top" href="https://github.com/pnad0911"><i id="gii"class="fa fa-git" style="font-size:20px;color:rgb(255, 255, 26);"></i></a></div>
+        <div class="col-sm-1" style="height:100%"><a id="st" class="top" href="http://steamcommunity.com/profiles/76561198146149656/"><i id="sti" class="fa fa-steam" style="font-size:20px;color:rgb(102, 102, 255)"></i></a></div>
+        <div class="col-sm-1" style="height:100%"></div>
+        <div class="col-sm-1" style="height:100%"></div>
+        <div class="col-sm-1" style="height:100%"></div>
+        <div class="col-sm-1" style="height:100%"></div>
+    </div>
+    </div>
+</nav>
+<div class="sec">
+    <div class="row" style="height:100%;text-align:center">
+        <div class="col-xs-4 hvr-sink" style="height:100%;"><a id="ab2" target="iframe_a" class="top " href="denied.html" style="text-decoration: none;color:white;">About</a></div>
+        <div class="col-xs-4 hvr-sink" style="height:100%"><a id="re2" target="iframe_a" class="top " href="" style="text-decoration: none;color:white;">Résumé</a></div>
+        <div class="col-xs-4 hvr-sink" style="height:100%;"><a id="co2" target="iframe_a" class="top" href="denied.html" style="text-decoration: none;color:white;">Contract</a></div>
+    </div>
+</div>
+<div id="bg"></div>
+
+<div id="toggle">
+    <a id="close" href="#">
+    <span class="fa-stack fa-lg close-button">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+    </span>
+    </a>
+    <iframe src="#" name="iframe_a" scrolling="yes"></iframe>
+</div>
+
+
+<!-- The Side bar -->
+<div class="side">
+    <div class="fb"><a style="text-decoration: none" href="https://www.facebook.com/pnad0911" ><i class="fa fa-facebook-square" style="color:white;"></i></a></div>
+    <div class="in"><a style="text-decoration: none" href="https://www.instagram.com/pnaduy/?hl=en"><i class="fa fa-instagram" style="color:white;"></i></a></div>
+    <div class="gi"><a style="text-decoration: none" href="https://github.com/pnad0911"><i class="fa fa-git" style="color:white;"></i></a></div>
+    <div class="st"><a style="text-decoration: none" href="http://steamcommunity.com/profiles/76561198146149656/"><i class="fa fa-steam" style="color:white;"></i></a></div>
+</div>
+<!-- End side bar -->
+
+<div id="mid">
+    <div id="tophalf">
+        <svg viewBox="0 0 700 500">
+        <g class="g-ants">
+            <use xlink:href="#text" class="my"></use>     
+            <use xlink:href="#text" class="my"></use>     
+            <use xlink:href="#text" class="my"></use>     
+            <use xlink:href="#text" class="my"></use>     
+            <use xlink:href="#text" class="my"></use>
+            <use xlink:href="#text" class="my"></use>     
+        </g>
+        <symbol id="text">
+            <text text-anchor="middle" x="50%" y="40%" class="size" style="font: 10em/1 'Baloo Tammudu', cursive;background-size: .12em 10%">Hello!</text>
+        </symbol>
+  
+    </svg>
+    </div>
+    <div id="lowhalf">
+        <div class="row" style="height:100vh">
+            <div class="col-xs-4" style="height:100%;text-align:center;padding-left:0;
+   padding-right:0;"> 
+                <a href="http://www.ece.ucsd.edu/undergraduate/computer-engineering-major"><div id="circle1" class="hvr-ripple-in"><i id="sc" class="fa fa-mortar-board"></i></div></a>
+            </div>
+            <div class="col-xs-4" style="height:100%;text-align:center;padding-left:0;
+   padding-right:0;">
+                <div id="circle2" class="hvr-ripple-in"><i id="us" class="fa fa-user-circle"></i></div>
+            </div>
+            <div class="col-xs-4" style="height:100%;text-align:center;padding-left:0;
+   padding-right:0;">
+                <a id="cir3" target="iframe_a" href="mail.html" style="text-decoration:none;"><div id="circle3" class="hvr-ripple-in"><i id="ma" class="material-icons">mail</i></div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- The Side bar -->
+<div id="popup2">
+  <div>Xin chào</div>
+  <svg viewBox="0 0 800 1200" preserveAspectRatio="xMinYMin meet" >
+    <path id="path2" d="M0 30 L38 0 L65 0 Z" style="fill:rgb(102, 255, 255);"/>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+</div>
+<script>
+$(document).ready(function(){
+    $("#circle2").mouseover(function(){
+        var x = $("#circle2").offset();
+        $( "#popup2" ).css("display","block");
+        $( "#popup2" ).css({left:x.left});
+        $( "#popup2" ).css({top:x.top});
+        $( "#popup2" ).css({opacity:'1'},300);
+        var w1 = document.body.clientHeight/6 ;
+        var w2 = document.body.clientHeight/4 ;
+        var h = document.body.clientHeight/9;
+        document.getElementById("path2").setAttribute("d","M0 " + h + " L"+ w1 +" 0 "+ w2 +" 0 Z");
+        setTimeout( "$('#popup2').hide();", 3000);
+    });
+    $("#circle2").mouseout(function(){
+        $( "#popup2" ).css({opacity:'0'});
+        $( "#popup2" ).css("display","none");
+    });
+});
+</script>
+
+
+<!-- Hide popup1 
+<div id="popup1">
+  <div>Currently under construction :(</div>
+  <svg viewBox="0 0 800 1200" preserveAspectRatio="xMinYMin meet" >
+    <path id="path1" d="M0 30 L38 0 L65 0 Z" />
+    Sorry, your browser does not support inline SVG.
+  </svg>
+</div>
+<script>
+$(document).ready(function(){
+    $("#circle1").mouseover(function(){
+        var x = $("#circle1").offset();
+        $( "#popup1" ).css("display","block");
+        $( "#popup1" ).css({left:x.left});
+        $( "#popup1" ).css({top:x.top});
+        $( "#popup1" ).css({opacity:'1'},300);
+        var w1 = document.body.clientHeight/6 ;
+        var w2 = document.body.clientHeight/4 ;
+        var h = document.body.clientHeight/9;
+        document.getElementById("path1").setAttribute("d","M0 " + h + " L"+ w1 +" 0 "+ w2 +" 0 Z");
+    });
+    $("#circle1").mouseout(function(){
+        $( "#popup1" ).css({opacity:'0'});
+        $( "#popup1" ).css("display","none");
+    });
+});
+</script>        -->
+
+
+<script>
+    $(document).ready(function(){
+        $("#circle1").mouseover(function(){
+            $("#sc").css("color","rgb(0, 51, 102)");
+        });
+        $("#circle1").mouseout(function(){
+            $("#sc").css("color","rgb(0, 51, 102)");
+        });
+    });
+    $(document).ready(function(){
+        $("#circle2").mouseover(function(){
+            $("#us").css("visibility","hidden");
+            $("#circle2").css("background-size","cover");
+            $("#circle2").css("background-position","center bottom");
+            $("#circle2").css("background-image","url(./images/duy.JPG)");
+            $("#circle2").css("opacity","1");
+        });
+        $("#circle2").mouseout(function(){
+            $("#us").css("visibility","visible");
+            $("#us").css("color","rgb(0, 51, 102)");
+            $("#circle2").css("background","white");
+        });
+    });
+    $(document).ready(function(){
+        $("#circle3").mouseover(function(){
+            $("ma").css("color","rgb(0, 51, 102)");
+        });
+        $("#circle3").mouseout(function(){
+            $("#ma").css("color","rgb(0, 51, 102)");
+        });
+        $("#circle3").click(function(){
+            $("#ma").css("color","rgb(0, 51, 102)");
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $( "#re" ).click(function() {
+            var element = document.getElementById("bg");
+            if (element.style.opacity  == '0.5') {
+                $( "#bg" ).animate({opacity:'1'},350);
+                $("#toggle").fadeOut().css("display","block");
+                $( "#lowhalf" ).animate({opacity:'1'},350);
+                $( ".side" ).animate({opacity:'1'},350);
+                $( ".type" ).css("display","block");
+            } else {
+                $( "#bg" ).animate({opacity:'0.5'},350);
+                $( "#lowhalf" ).animate({opacity:'0.85'},350);
+                $( ".bar" ).animate({opacity:'0.5'},350);
+                $( ".side" ).animate({opacity:'0.5'},350);
+                $("#toggle").fadeIn().css("display","block");
+                $( ".type" ).css("display","none");
+            }
+        });
+        $( "#re2" ).click(function() {
+            var element = document.getElementById("bg");
+            if (element.style.opacity  == '0.5') {
+                $( "#bg" ).animate({opacity:'1'},350);
+                $("#toggle").fadeOut().css("display","block");
+                $( "#lowhalf" ).animate({opacity:'1'},350);
+                $( ".side" ).animate({opacity:'1'},350);
+                $( ".type" ).css("display","block");
+            } else {
+                $( "#bg" ).animate({opacity:'0.5'},350);
+                $( "#lowhalf" ).animate({opacity:'0.85'},350);
+                $( ".bar" ).animate({opacity:'0.5'},350);
+                $( ".side" ).animate({opacity:'0.5'},350);
+                $("#toggle").fadeIn().css("display","block");
+                $( ".type" ).css("display","none");
+            }
+        });
+        $( "#ab2" ).click(function() {
+            var element = document.getElementById("bg");
+            if (element.style.opacity  == '0.5') {
+                $( "#bg" ).animate({opacity:'1'},350);
+                $("#toggle").fadeOut().css("display","block");
+                $( "#lowhalf" ).animate({opacity:'1'},350);
+                $( ".side" ).animate({opacity:'1'},350);
+                $( ".type" ).css("display","block");
+            } else {
+                $( "#bg" ).animate({opacity:'0.5'},350);
+                $( "#lowhalf" ).animate({opacity:'0.85'},350);
+                $( ".bar" ).animate({opacity:'0.5'},350);
+                $( ".side" ).animate({opacity:'0.5'},350);
+                $("#toggle").fadeIn().css("display","block");
+                $( ".type" ).css("display","none");
+            }
+        });
+        $( "#ab" ).click(function() {
+            var element = document.getElementById("bg");
+            if (element.style.opacity  == '0.5') {
+                $( "#bg" ).animate({opacity:'1'},350);
+                $("#toggle").fadeOut().css("display","block");
+                $( "#lowhalf" ).animate({opacity:'1'},350);
+                $( ".side" ).animate({opacity:'1'},350);
+                $( ".type" ).css("display","block");
+            } else {
+                $( "#bg" ).animate({opacity:'0.5'},350);
+                $( "#lowhalf" ).animate({opacity:'0.85'},350);
+                $( ".bar" ).animate({opacity:'0.5'},350);
+                $( ".side" ).animate({opacity:'0.5'},350);
+                $("#toggle").fadeIn().css("display","block");
+                $( ".type" ).css("display","none");
+            }
+        });
+        $( "#co" ).click(function() {
+            var element = document.getElementById("bg");
+            if (element.style.opacity  == '0.5') {
+                $( "#bg" ).animate({opacity:'1'},350);
+                $("#toggle").fadeOut().css("display","block");
+                $( "#lowhalf" ).animate({opacity:'1'},350);
+                $( ".side" ).animate({opacity:'1'},350);
+                $( ".type" ).css("display","block");
+            } else {
+                $( "#bg" ).animate({opacity:'0.5'},350);
+                $( "#lowhalf" ).animate({opacity:'0.85'},350);
+                $( ".bar" ).animate({opacity:'0.5'},350);
+                $( ".side" ).animate({opacity:'0.5'},350);
+                $("#toggle").fadeIn().css("display","block");
+                $( ".type" ).css("display","none");
+            }
+        });
+        $( "#co2" ).click(function() {
+            var element = document.getElementById("bg");
+            if (element.style.opacity  == '0.5') {
+                $( "#bg" ).animate({opacity:'1'},350);
+                $("#toggle").fadeOut().css("display","block");
+                $( "#lowhalf" ).animate({opacity:'1'},350);
+                $( ".side" ).animate({opacity:'1'},350);
+                $( ".type" ).css("display","block");
+            } else {
+                $( "#bg" ).animate({opacity:'0.5'},350);
+                $( "#lowhalf" ).animate({opacity:'0.85'},350);
+                $( ".bar" ).animate({opacity:'0.5'},350);
+                $( ".side" ).animate({opacity:'0.5'},350);
+                $("#toggle").fadeIn().css("display","block");
+                $( ".type" ).css("display","none");
+            }
+        });
+        $( "#cir3" ).click(function() {
+            var element = document.getElementById("bg");
+            if (element.style.opacity  == '0.5') {
+                $( "#bg" ).animate({opacity:'1'},350);
+                $("#toggle").fadeOut().css("display","block");
+                $( "#lowhalf" ).animate({opacity:'1'},350);
+                $( ".side" ).animate({opacity:'1'},350);
+                $( ".type" ).css("display","block");
+            } else {
+                $( "#bg" ).animate({opacity:'0.5'},350);
+                $( "#lowhalf" ).animate({opacity:'0.85'},350);
+                $( ".bar" ).animate({opacity:'0.5'},350);
+                $( ".side" ).animate({opacity:'0.5'},350);
+                $("#toggle").fadeIn().css("display","block");
+                $( ".type" ).css("display","none");
+            }
+        });
+        $( "#close" ).click(function() {
+            $("#toggle").fadeOut().css("display","block");
+            $( "#bg" ).animate({opacity:'1'},350);
+            $( "#lowhalf" ).animate({opacity:'1'},350);
+            $( ".bar" ).animate({opacity:'1'},350);
+            $( ".side" ).animate({opacity:'1'},350);
+            $( ".type" ).css("display","block");
+        });
+    });
+</script>
+
+<div class="type"><h1 id="print"></h1></div>
+
+<script>
+        var i = 0;
+        var str = ["I’m shy, please come say hi :)","I'm a positive person.","I love soccer!","Good at logical thinking but memorizing.","I think, therefore I’m single.",
+        "Take nothing seriously.","Howdy-doody!"];
+        var ord = str;
+        var index = Math.floor(Math.random() * str.length);
+        var del = false;
+        var c = Math.floor(Math.random() * 8);
+        var j = 0;
+        function myFunction() {
+        if ( (i < (str[index].length+1)) && del === false) {
+            var k = j%2;
+            if (j <= c && k == 0) {
+                document.getElementById("print").innerHTML = "|";
+                setTimeout("myFunction()",500);
+                j++;
+            } else if (j <= c && k == 1) {
+                document.getElementById("print").innerHTML = " ";
+                setTimeout("myFunction()",500);
+                j++;
+            } else {
+            var sub = str[index].substr(0, i);
+            var less = 200 - Math.random() * 100;
+            var inter = [less,250];
+            var a = Math.floor(Math.random()*2);
+            var time = inter[a];
+            document.getElementById("print").innerHTML = sub+"|";
+            i++;
+            setTimeout("myFunction()",time);}
+        } else if (i == (str[index].length+1) && del === false ){
+            del = true;
+            setTimeout("myFunction()",600);
+        } else if (del === true && i >=0) {
+            var sub2 = str[index].substr(0, i);
+            var time2 = (200 - Math.random() * 100)/2;
+            document.getElementById("print").innerHTML = sub2+"|";
+            i--;
+            setTimeout("myFunction()",time2);
+        } else if ( i <= 0 ) {
+            c = Math.floor(Math.random() * 8);
+            j = 0;
+            del = false;
+            i = 0;
+            str.splice(index, 1);
+            index = Math.floor(Math.random() * str.length);
+            if (str.length == 0) {
+                str = ["I’m shy, please come say hi :)","I'm a positive person.","I love soccer!","Good at logical thinking but memorizing.","I think, therefore I’m single.",
+        "Take nothing seriously.","Howdy-doody!"];
+            }
+            setTimeout("myFunction()",0);
+        }
+    }
+</script>
+
+</body>
+</html>

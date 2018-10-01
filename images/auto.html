@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Auto</title>
+    <link rel="stylesheet" href="./auto.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+    <script>
+    $(document).ready(function(){
+        $("#fb").mouseenter(function(){
+            document.getElementById("fbi").setAttribute("class", "fa fa-facebook-square fa-spin");
+        });
+        $("#fb").mouseleave(function(){
+            document.getElementById("fbi").setAttribute("class", "fa fa-facebook-square");
+        });
+
+        $("#in").mouseenter(function(){
+            document.getElementById("ini").setAttribute("class", "fa fa-instagram fa-spin");
+        });
+        $("#in").mouseleave(function(){
+            document.getElementById("ini").setAttribute("class", "fa fa-instagram");
+        });
+    });
+    </script>
+    <script>
+        var imgArray = new Array();
+        imgArray[0] = new Image;imgArray[0] = "url(./images/1.jpg)";
+	    imgArray[1] = new Image;imgArray[1] = "url(./images/2.jpg)";
+	    imgArray[2] = new Image;imgArray[2]= "url(./images/3.jpg)";
+        var ind = 0;
+        var auto;
+        function cycle() {
+            ++ind;
+            if (ind > 2) {
+                ind = 0;
+            }
+            $('#im').fadeTo('slow', 0, function()
+            {
+                $(this).css('background-image',imgArray[ind]);
+            }).delay(1000).fadeTo('slow', 1);
+            if (ind==0){
+                $( "#o1" ).css("opacity","1");
+                document.getElementById("o1").innerHTML = "&#9679";
+                document.getElementById("o2").innerHTML = "o";
+                document.getElementById("o3").innerHTML = "o";
+                $( "#o2" ).css("opacity","0.3");
+                $( "#o3" ).css("opacity","0.3");
+            } else if (ind==1) {
+                $( "#o2" ).css("opacity","1");
+                document.getElementById("o2").innerHTML = "&#9679";
+                document.getElementById("o1").innerHTML = "o";
+                document.getElementById("o3").innerHTML = "o";
+                $( "#o1" ).css("opacity","0.3");
+                $( "#o3" ).css("opacity","0.3");
+            }  else {
+                $( "#o3" ).css("opacity","1");
+                document.getElementById("o3").innerHTML = "&#9679";
+                document.getElementById("o2").innerHTML = "o";
+                document.getElementById("o1").innerHTML = "o";
+                $( "#o2" ).css("opacity","0.3");
+                $( "#o1" ).css("opacity","0.3");
+            } 
+            auto = setTimeout(cycle,9000);
+            return;
+        }
+
+    </script>
+    <script>
+        var i = 0;
+        var str = ["Welcome to Auto @$%^$#*&","Save 90% on $#@^%.","Grand opening","Do it better","100 year's experience of taking care"];
+        var ord = str;
+        var index = Math.floor(Math.random() * str.length);
+        var del = false;
+        var c = Math.floor(Math.random() * 8);
+        var j = 0;
+        function myFunction() {
+        if ( (i < (str[index].length+1)) && del === false) {
+            var k = j%2;
+            if (j <= c && k == 0) {
+                document.getElementById("print").innerHTML = "|";
+                setTimeout("myFunction()",500);
+                j++;
+            } else if (j <= c && k == 1) {
+                document.getElementById("print").innerHTML = " ";
+                setTimeout("myFunction()",500);
+                j++;
+            } else {
+            var sub = str[index].substr(0, i);
+            var less = 200 - Math.random() * 100;
+            var inter = [less,250];
+            var a = Math.floor(Math.random()*2);
+            var time = inter[a];
+            document.getElementById("print").innerHTML = sub+"|";
+            i++;
+            setTimeout("myFunction()",time);}
+        } else if (i == (str[index].length+1) && del === false ){
+            del = true;
+            setTimeout("myFunction()",600);
+        } else if (del === true && i >=0) {
+            var sub2 = str[index].substr(0, i);
+            var time2 = (200 - Math.random() * 100)/2;
+            document.getElementById("print").innerHTML = sub2+"|";
+            i--;
+            setTimeout("myFunction()",time2);
+        } else if ( i <= 0 ) {
+            c = Math.floor(Math.random() * 8);
+            j = 0;
+            del = false;
+            i = 0;
+            str.splice(index, 1);
+            index = Math.floor(Math.random() * str.length);
+            if (str.length == 0) {
+                str = ["Welcome to Auto @$%^$#*&","Save 90% on $#@^%.","Grand opening","Do it better","100 year's experience of taking care "];
+            }
+            setTimeout("myFunction()",0);
+        }
+    }
+    </script>
+    <script>
+        function start() {
+            myFunction();
+            cycle();
+        }
+    </script>
+</head>
+<body onLoad="start()">
+    <nav class="bar">
+        <div class="row" style="height:100vh">
+            <div class="col-sm-4" style="height:100%;text-align:center;">
+                <a href="#" style="text-decoration: none;color:white;"><h1 style="text-align:center;margin:auto;font-family: 'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;color:white;font-size: 6.1vh;">Auto Guys</h1></a>
+            </div>
+            <div class="col-xs-4" style="height:100%;text-align:center">
+                <div class="row" style="height:100%">
+                    <div id="ab" class="col-xs-4 hvr-sink" style="height:100%;"><a  id="abi" target="iframe_a" class="top " href="denied.html" style="text-decoration: none;color:white;">About</a></div>
+                    <div id="re" class="col-xs-4 hvr-sink" style="height:100%"><a id="rei" class="top " href="service.html" style="text-decoration: none;color:white">Service</a></div>
+                    <div id="co" class="col-xs-4 hvr-sink" style="height:100%;"><a id="coi" target="iframe_a" class="top" href="denied.html" style="text-decoration:none;color:white">Map</a></div>
+                </div>
+            </div>
+        <div class="col-xs-4" style="height:100%;text-align:center">
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"><a id="fb" class="top" href="denied.html" ><i id="fbi" class="fa fa-facebook-square" style="font-size:20px;color: rgb(0, 0, 153);"></i></a></div>
+            <div class="col-sm-1" style="height:100%"><a id="in" class="top" href="denied.html"><i id="ini" class="fa fa-instagram" style="font-size:20px;color:rgb(255, 0, 0);"></i></a></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+            <div class="col-sm-1" style="height:100%"></div>
+        </div>
+    </nav>
+    <div id="add">
+        <div class="row" style="height:100vh">
+            <div class="col-xs-4" style="height:100%;text-align:center"></div>
+            <div class="col-xs-4" style="height:100%;text-align:center">
+                <div class="row" style="height:100%">
+                    <div class="col-xs-4" style="height:100%;text-align:center"><i class="material-icons">event_available</i><p id="h1" >Appointment</p></div>
+                    <div class="col-xs-4" style="height:100%;text-align:center"><i class="material-icons">add_shopping_cart</i><p>Special Offers</p></div>
+                    <div class="col-xs-4" style="height:100%;text-align:center"><i class="material-icons">call</i><p>Contract</p></div>
+                </div>
+            </div>
+            <div class="col-xs-4" style="height:100%;text-align:center"></div>
+        </div>
+    </div>
+    <div id="adds">
+        <div class="row" style="height:100vh">
+            <div class="col-xs-4" style="height:100%;text-align:center;cursor: pointer;"><i class="material-icons">event_available</i><p id="h1">Appointment</p></div>
+            <div class="col-xs-4" style="height:100%;text-align:center;cursor: pointer;"><i class="material-icons">add_shopping_cart</i><p>Special Offers</p></div>
+            <div class="col-xs-4" style="height:100%;text-align:center;cursor: pointer;"><i class="material-icons">call</i><p>Contract</p></div>
+        </div>
+    </div>
+    <div id="im"></div>
+    <div class="bor"><p id="o1">o</p><p id="o2">o</p><p id="o3">o</p></div>
+    <div class="bor2"><h1 id="print"></h1></div>
+</body>
+</html>
